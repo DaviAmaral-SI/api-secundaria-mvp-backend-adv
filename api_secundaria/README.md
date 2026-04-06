@@ -4,7 +4,7 @@
 
 Esta API é responsável exclusivamente pelo cálculo de distância entre dois pontos geográficos, utilizando latitude e longitude.
 
-Ela é utilizada pela API principal, seguindo o conceito de separação de responsabilidades em uma arquitetura de microsserviços.
+Ela é utilizada pela [API Principal](https://github.com/DaviAmaral-SI/api-principal-mvp-backend-adv/), seguindo o conceito de separação de responsabilidades em uma arquitetura de microsserviços.
 
 ---
 
@@ -109,9 +109,10 @@ Entre no http://localhost:5001/#/ no navegador para utilizar a API.
 
 ### Passos
 
+Basta rodar o seguinte comando pelo terminal Docker, dentro do diretório da [API Principal](https://github.com/DaviAmaral-SI/api-principal-mvp-backend-adv/). 
+
 ```bash
-docker build -t api-distancia .
-docker run -p 5001:5001 api-distancia
+docker-compose up --build
 ```
 
 ---
@@ -126,7 +127,7 @@ http://localhost:5001/distancia
 
 ## 🔗 Integração
 
-Esta API é consumida pela API principal através de requisições HTTP.
+Esta API é consumida pela [API Principal](https://github.com/DaviAmaral-SI/api-principal-mvp-backend-adv/) através de requisições HTTP.
 
 Exemplo de uso:
 
